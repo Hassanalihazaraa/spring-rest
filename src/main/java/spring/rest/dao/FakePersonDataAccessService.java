@@ -1,11 +1,13 @@
 package spring.rest.dao;
 
+import org.springframework.stereotype.Repository;
 import spring.rest.model.Person;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+@Repository
 public class FakePersonDataAccessService implements PersonDao {
 
     private static List<Person> DB = new ArrayList<>();
